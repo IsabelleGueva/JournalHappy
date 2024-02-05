@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="JournalHappyCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="topBanner">
+    <img src="AcademicScholarsLogo.png" class="center">
+    <ul class="tabRow">
+        <li class="center tab"><a href="JournalHappy.html" target="_self">Daily List</a></li>
+        <li class="center tab"><a href="Schedule.html" target="_self">Schedule</a></li>
+        <li class="center tab"><a href=GoalsMotivation.html target="_self">Goals and Motivation</a></li>
+    </ul>
+</div>
+<div class="sunsetBackground">
+<div class="goalBanner">
+<div class="newGoal" id="noteStack"><img src="dogearredNote.png" style="width:150%;">
+    <button id="addGoalTitle" onclick="openForm()">Add Goal</button>
+</div>
+<div class="smartBanner">
+    S.M.A.R.T. goals
+    <div id="smartDescription"><div class="startLetter">Specify:</div> have a clear idea in mind<br><div class="startLetter">Measurable:</div> record if certain steps are being made<br><div class="startLetter">Attainable:</div> be realistic with your time<br><div class="startLetter">Relevant:</div> have an overall purpose for your goal<br><div class="startLetter">Time:</div> create a deadline and checkpoints </div>
+</div>
+</div>
+<div class="form-popup" id="goalForm">
+    <form class="form-container">
+        <h1>Edit New Goal</h1>
+        <label><b>Title</b></label>
+        <input type="text" id="input-title" placeholder="Goal title" name="title"><br>
+        <label><b>Description</b></label>
+        <input type="text" id="input-description" placeholder="Goal Description" name="description"><br><br>
+        <button id="myButton">Confirm</button>
+    </form>
+</div>
+<div class="goalGrid grid" id="goalGrid">
+
+</div>
+</div>
+
+<script src="JournalHappyScript.js"></script>
+<script src="Goals.js"></script>
+<script>document.getElementById("myButton").addEventListener("click", submit);</script>
+</body>
+<foot>
+
+</foot>
+</html>

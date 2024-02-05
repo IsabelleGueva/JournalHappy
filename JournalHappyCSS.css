@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+.sunsetBackground{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(135deg, rgb(254,255,213), rgb(240, 154, 63));
+    padding: 10px;
+}
+.topBanner{
+    margin:0;
+    padding:15px 20px 10px 20px;
+    background: white;
+    position:sticky;
+}
+.tabRow{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255,222,222);
+    width:100%;
+}
+
+.center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.tab{
+    padding-left:30px;
+    padding-right:30px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:#555;
+}
+.tab::before{
+background-image: url(transparentBackground.png);
+}
+.todo-app{
+    width:100%;
+    max-width:540px;
+    background: #fff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius:10px;
+}
+.todo-app h2{
+    color: rgb(96, 96, 96);
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.addItemRow{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255,235,153);
+    border-radius:40px;
+    padding-left:20px;
+    margin-bottom: 25px;
+}
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background:transparent;
+    padding:10px;
+    font-weight: 16px;
+    color:rgb(96, 96, 96);
+
+}
+button{
+    border:none;
+    outline:none;
+    padding:14px 50px;
+    background: rgb(174, 203, 255);
+    color:white;
+    font-size: 16px;
+    cursor:pointer;
+    border-radius: 40px;
+}
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 16px 12px 15px 45px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+}
+ul li::before{
+    content:'';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image: url(PlainPink.png);
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left:8px;
+}
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Rainbow.png);
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    font-size: 22px;
+    height: 40px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#edeef0;
+}
+.smartBanner{
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+    background-color: rgb(174, 203, 255);
+    line-height: 30px;
+    padding: 15px;
+    width:40vw;
+    display:block;
+    margin-left:40%;
+    margin-right:10%;
+    position:relative;
+}
+#smartDescription{
+    font-size: .75em;
+    color:white;
+    font-weight: 450;
+    text-align: left;
+    margin-left:30px;
+    width:100%;
+}
+.startLetter{
+    font-size: 1em;
+    font-weight: 500;
+}
+.newGoal{
+    width: 20vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    position:absolute;
+}
+.form-popup{
+    position: fixed;
+    z-index: 10;
+    left      : 30%;
+    top       : 25%;
+}
+#goalForm{
+    display:none;
+}
+.form-container{
+    background-color: white;
+    color:#555;
+    font-size: 15px;
+    line-height: 60px;
+    height:44%;
+    max-width: 1000px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom:25px;
+}
+.form-container input[type=text]:focus, .form-container input[type=description]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.form-container input[type=text], .form-container input[type=description] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+#addGoalTitle{
+    position:absolute;
+    bottom:50%;
+    font-size: 20px;
+    margin-left: 50%;
+}
+button:hover{
+    color:black;
+    background-color: aquamarine;
+}
+
+.goalBanner{
+    width:98%;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom:2%;
+    display:flex;
+}
+.goalGrid{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:5%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.newPostit{
+    position: relative;
+    text-align: center;
+}
+.individualGoal{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+.schedule{
+    background: url();
+}
+.deleteButton{
+    position: absolute;
+    left:65%;
+    top:65%;
+    background-color: rgb(174, 203, 255);
+}
+
